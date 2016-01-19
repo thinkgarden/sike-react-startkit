@@ -578,10 +578,28 @@ a {
   -webkit-flex:1 0;
       -ms-flex:1 0;
           flex:1 0;
+  height: 500px;
+  overflow: scroll;
 }
+.cart__title{
+  position: fixed;
+}
+.cart__content{
+  padding-top: 40px;
+  /*flex-flow:column wrap;*/
+}
+.cart-item {
+  height: 150px;
+  margin-bottom: 20px;
+  background: rgba(0,255,0,0.3);
+}
+
 .checkout{
   -webkit-box-flex:0;
   -webkit-flex:0 auto;
       -ms-flex:0 auto;
           flex:0 auto;
+  height: 300px;
+  background: rgba(0,0,255,0.3);
+
 }
