@@ -18,9 +18,8 @@
 </head>
 <body>
 <div class="site">
-<a class="site__right-sidebar-toggle">
-  <img src="img/arrow-icon.svg"/>
-</a>
+    <div class="site__background"></div>
+    <div class="site__overlay"></div>
   <!-- 70% main area -->
   <div class="site__main">
     <div class="site__left-sidebar">
@@ -42,7 +41,24 @@
                 <div class="product__name">
                   Marana E-Lite
                 </div>
-                <img class="product__heart" src="img/heart.svg"/>
+                <img class="product__heart" src="img/heart-liked.svg"/>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__display">
+                <img class="product__img" src="img/shoe1.jpg"/>
+                <a class="product__add">
+                    <img class="product__add__icon" src="img/cart-icon.svg"/>
+                </a>
+                <div class="product__price">
+                 $299
+                </div>
+            </div>
+            <div class="product__description">
+                <div class="product__name">
+                  Marana E-Lite Marana E-Lite Marana E-Lite Marana E-Lite Marana E-Lite
+                </div>
+                <img class="product__heart" src="img/heart-liked.svg"/>
             </div>
         </div>
         <div class="product">
@@ -65,24 +81,7 @@
         <div class="product">
             <div class="product__display">
                 <img class="product__img" src="img/shoe1.jpg"/>
-                <a class="product__add">
-                    <img class="product__add__icon" src="img/cart-icon.svg"/>
-                </a>
-                <div class="product__price">
-                 $299
-                </div>
-            </div>
-            <div class="product__description">
-                <div class="product__name">
-                  Marana E-Lite
-                </div>
-                <img class="product__heart" src="img/heart.svg"/>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product__display">
-                <img class="product__img" src="img/shoe1.jpg"/>
-                <a class="product__add">
+                <a class="product__add selected">
                     <img class="product__add__icon" src="img/cart-icon.svg"/>
                 </a>
                 <div class="product__price">
@@ -214,6 +213,7 @@
         </div>
     </div>
     <div class="checkout">
+        <div class="cart__overlay"></div>
         <hr class="checkout__divider"/>
         <input type="text" class="checkout__coupon-input" placeholder="coupon code"></input>
 
@@ -236,6 +236,9 @@
 
     </div>
   </div> <!-- site__right-sidebar -->
+    <a class="site__right-sidebar-toggle">
+        <img src="img/arrow-icon.svg"/>
+    </a>
 </div> <!-- site -->
 
 </body>
