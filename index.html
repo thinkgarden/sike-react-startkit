@@ -217,12 +217,22 @@
         <hr class="checkout__divider"/>
         <input type="text" class="checkout__coupon-input" placeholder="coupon code"></input>
 
-        <div class="checkout__amount">Discount <span class="checkout__amount--saving">$90.02</span></div>
-        <div class="checkout__amount">Subtotal <span class="checkout__price--strikeout">$450.12</span></div>
-        <div class="checkout__amount checkout__price--saving"> 360.09</div>
-        <div class="cart__icon--button">
-            <img class="cart-icon" src="img/cart-icon.svg"/> <span>Checkout</span>
+        <div class="checkout__amount">
+            <div class="checkout__left">Discount</div>
+            <div class="checkout__price--discount">-$90.02</div>
         </div>
+        <div class="checkout__amount">
+            <div class="checkout__left">Subtotal</div>
+            <div class="checkout__price--strikeout">$450.12</div>
+        </div>
+        <div class="checkout__amount">
+             <div class="checkout__left"></div>
+             <div class="checkout__price--saving">$360.09</div>
+        </div>
+        <a class="checkout__button">
+            <img class="checkout__button--image" src="img/cart-icon.svg"/>
+            <div class="checkout__button--text">Checkout</div>
+        </a>
 
     </div>
   </div> <!-- site__right-sidebar -->
